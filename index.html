@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nollex · Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#" class="logo">Nollex<span>Dev</span></a>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1>Hi, I’m <span>Nollex</span> — Frontend Web Developer</h1>
+      <p class="sub">I build clean, fast websites with HTML, CSS & JavaScript.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn primary">View My Work</a>
+        <a href="https://github.com/Nollex1" target="_blank" class="btn ghost">GitHub Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="card-body">
+            <h3>Divine Livestock Farm</h3>
+            <p>
+              A modern farm website that showcases livestock products and connects farmers,
+              customers, and potential investors. Built with HTML, CSS, and JavaScript.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn small primary" target="_blank" href="https://Nollex1.github.io/Livestock-Farm-Project/">Live Demo</a>
+            <a class="btn small ghost" target="_blank" href="https://github.com/Nollex1/Livestock-Farm-Project">Source Code</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <div class="card-body">
+            <h3>MovieSite</h3>
+            <p>
+              An interactive movie listing site with clean layout and responsive styling.
+              Practiced content structure and UI components for discoverability.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn small primary" target="_blank" href="https://nollex1.github.io/Moviesite/">Live Demo</a>
+            <a class="btn small ghost" target="_blank" href="https://github.com/Nollex1/Moviesite">Source Code</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <div class="card-body">
+            <h3>RPG Game</h3>
+            <p>
+              A browser-based RPG where players move through locations, fight monsters,
+              and manage inventory — pure HTML/CSS/JS game logic.
+            </p>
+          </div>
+          <div class="card-actions">
+            <a class="btn small primary" target="_blank" href="https://nollex1.github.io/RPG-Games/">Live Demo</a>
+            <a class="btn small ghost" target="_blank" href="https://github.com/Nollex1/RPG-Games">Source Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <h2 class="section-title">About Me</h2>
+      <p class="max">
+        I’m a self-taught frontend developer focused on turning ideas into simple, useful
+        web experiences. I enjoy building clean UIs, practicing JavaScript, and shipping
+        small projects fast. Open to collaborations, remote roles, and freelance gigs.
+      </p>
+      <ul class="badges">
+        <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive UI</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact</h2>
+      <p class="max">Got a project, role, or collaboration? Let’s talk.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:ezenwatavalentine1@gmail.com">📧 ezenwatavalentine1@n.com</a>
+        <a class="contact-card" target="_blank" href="https://github.com/Nollex1">🐙 GitHub: @Nollex1</a>
+        <a class="contact-card" target="_blank" href="https://t.me/noble_nollex">💬 Telegram: @noble_nollex</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Nollex — Built with ❤️ in HTML, CSS & JS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
